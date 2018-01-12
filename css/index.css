@@ -1,0 +1,177 @@
+[v-cloak] {
+  display: none;
+}
+#main {
+    position: relative;
+    width: 100%; 
+    height:100vh;
+    background: url("../images/bg.png") no-repeat;
+    background-size:100%;   
+}
+#main input{
+    outline: none;
+    border: none;   
+}
+#main .time,#main .address {
+    position: absolute;
+    left:0;
+    right:0;
+    margin:auto;
+    bottom:8rem;
+    width:10rem;
+    height:2.1rem;
+    background: url('../images/btn.png') no-repeat;
+    background-size:100%; 
+    text-align: center;
+    line-height: 2.1rem;
+    font-size: 0.8rem;
+    color:#fff;
+    border-radius: 1.05rem; 
+}
+#main .address{
+    bottom:5rem;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:#fff;
+    font-size: 0.8rem;
+}
+#main .createYun{
+    position: absolute;
+    left:0;
+    right:0;
+    margin:auto;
+    width:10rem;
+    height:2.1rem;
+    text-align: center;
+    line-height: 2.1rem;
+    background-image: -webkit-linear-gradient(left bottom,#00E0FF,#A3FF5F);
+    border-radius: 1.05rem;
+    bottom:3rem;
+    text-decoration: none;
+}
+.to-result{
+    position: absolute;
+    left:0;
+    right:0;
+    margin:auto;
+    width:10rem;
+    height:2rem;
+    text-align: center;
+    line-height: 2rem;
+    background-image: -webkit-linear-gradient(left bottom,#00E0FF,#A3FF5F);
+    border-radius: 1rem;
+    bottom:2rem;
+    color:#4F009F;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+.country-model-mask{
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+}
+.country-model-mask .country-model{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    padding-top: 1.4rem;
+    transition:all 1s ease-in-out;
+    box-shadow:0px -4px 20px  rgba(56, 27, 85, 1);
+    background: -webkit-linear-gradient(#5D3584,#3D1473);
+}
+.country-model-mask .country-model.on{
+    height: 16rem;
+}
+.country-model-mask .country-model h2{
+    position: relative;
+    font-size: 1rem;
+    padding-left: 1.4rem;
+    color:#fff;
+}
+.country-model-mask .country-model h2 .close{
+    position: absolute;
+    right: 1.4rem;
+    top:0.3rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: url('../images/close.png') no-repeat;
+    background-size: 100%;
+}
+.country-model-mask .country-model em{
+    display: block;
+    font-size: 0.7rem;
+    color:rgba(255, 255, 255, 0.5);
+    padding-left: 1.4rem;
+    margin-top: 0.3rem;
+}
+.country-model-mask .country-model .country-content{
+    width: 18rem;
+    margin:1.3rem auto 0;
+}
+.select-f{
+    position: relative;
+    width:10rem;
+    left: 50%;
+    top: 1rem;
+    margin-left: -5rem;
+    height: 2rem;
+}
+.select-f.s{
+    top: 1.5rem;
+}
+.select-f.t{
+    top: 2rem;
+}
+.select-f span{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    font-size: 0.7rem;
+    color:#fff;
+    line-height: 2rem;
+    text-align: center;
+}
+.country-model-mask .country-model .country-content select{
+    display: block;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    color:#fff;
+    width:10rem;
+    height: 2.1rem;
+    line-height: 2.1rem;
+    margin:0 auto 0.5rem;
+    text-align: text;
+    padding: 0 0.4rem;
+    border-radius: 1.05rem;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 0.7rem;
+    background: url('../images/btn.png') no-repeat;
+    background-size:100%; 
+    border:0;
+}
+.country-model-mask .country-model .country-content select option{
+    font-size: 0.7rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+.country-model-mask .country-model .sure{
+    width: 10rem;
+    height: 2.1rem;
+    margin:1rem auto 0;
+    text-align: center;
+    line-height: 2.1rem;
+    color: #4F009F;
+    font-size: 0.8rem;
+    background-image: -webkit-linear-gradient(left bottom,#00E0FF,#A3FF5F);
+    border-radius: 1.05rem;
+}
