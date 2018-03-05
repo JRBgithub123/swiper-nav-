@@ -13,7 +13,7 @@
 		margin-top:100px;
 	    width: 600px;
 	    height: 600px;
-		}  
+		}
 		.red{
 			background:red;
 		}
@@ -22,7 +22,7 @@
 		}
 		.green{
 			background:green;
-		} 
+		}
 	.swiper-container .swiper-slide{
 		font-size: 50px;
 		text-align: center;
@@ -88,11 +88,11 @@
 </head>
 <body>
 	<div id="app">
-		
+
 		<ul class="topNav">
 			<li v-for="item in topNav" @click="slideTo(item.index)" v-bind:class="{active:slideIndex==item.index}">{{item.name}}</li>
 		</ul>
-		
+
 
 		<ul class="tabNav">
 			<li v-for="item in tabNav" @click="slideTo(item.index)" v-bind:class="{active:slideIndex==item.index}">{{item.name}}</li>
@@ -119,15 +119,16 @@
 		        <div class="swiper-slide green" >Slide 16 </div>
 		    </div>
 		</div>
-	
-   
+		
+
+
 
 </div>
 
 <script type="text/javascript" src="js/vue.2.1.3.js"></script>
 <script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
 <script type="text/javascript">
-	
+
 	var app=new Vue({
 		el:"#app",
 		data:{
@@ -144,7 +145,7 @@
 				{name:"第五页",index:8},
 			],
 			slideIndex:0,
-			
+
 		},
 		methods:{
 			slideTo:function(x){
@@ -155,7 +156,7 @@
 		}
 
 	})
-	
+
 var mySwiper = new Swiper ('.swiper-container', {
     direction: 'vertical',
     // loop:true,
@@ -165,19 +166,19 @@ var mySwiper = new Swiper ('.swiper-container', {
     	console.log(swiper.activeIndex);
     	if(swiper.activeIndex>=0&&swiper.activeIndex<=2){
     		app.slideIndex=0;
-    	
+
     	}else if(swiper.activeIndex>=3&&swiper.activeIndex<=4){
     		app.slideIndex=3;
-    	
+
     	}else if(swiper.activeIndex>=5&&swiper.activeIndex<=6){
     		app.slideIndex=5;
-    	
+
     	}else if(swiper.activeIndex>6){
     		app.slideIndex=swiper.activeIndex;
     	}
-    }	
-   
-  })        
+    }
+
+  })
 </script>
 </body>
 </html>
